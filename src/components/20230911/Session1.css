@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .bigbox1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: indigo;
+    text-transform: capitalize;
+  }
+  
+  .bigbox2 {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px auto;
+  }
+  
+  .b1 {
+    background-color: red;
+    filter: blur(9px);
+  }
+  
+  .b2 {
+    background-color: purple;
+    filter: drop-shadow(16px 16px 20px skyblue) invert(75%);
+    color: lightgrey;
+  }
+  
+  .bigbox3 {
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px auto;
+  }
+  
+  .smallbox1 img {
+    background-color: black;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+  }
+  
+  .smallbox2 img {
+    background-color: beige;
+    border: 1px solid black;
+  }
+  
+  .smallbox3 img {
+    background-color: cadetblue;
+    filter: brightness(.5);
+    padding: 1px;
+  }
