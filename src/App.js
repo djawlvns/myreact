@@ -8,15 +8,15 @@
 // import { Menu } from "./components/20230913/Menu";
 import { createGlobalStyle } from "styled-components";
 import { Home } from "./components/20230913/Home";
+// import { Button1 } from "./components/20230913/Button";
 
 const Globalstyle = createGlobalStyle`
 *{
-  font-family: 'GmarketSansMedium';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
   margin : 0;
   padding : 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: Poppins, GmarketSansMedium;
 }
 `;
 export function App() {
@@ -38,6 +38,7 @@ export function App() {
       {/* <CounterState></CounterState> */}
       {/* <Menu></Menu> */}
       <Home></Home>
+      {/* <Button1 /> */}
     </>
   );
 }
