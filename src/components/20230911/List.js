@@ -8,12 +8,14 @@ const Container = styled.div`
 const Title = styled.h1`
   font-size: 2.5rem;
   color: orange;
+  color: ${(props) => (props.isActive ? "orange" : props.fontColor)};
 `;
 const Imagestyle = styled.img`
   border-radius: 50%;
 `;
-const TilteBlue = styled.a(Title)`
-color : blue;`;
+// const TilteBlue = styled.a(Title)`
+// color : blue;
+// `;
 export function List() {
   const products = [
     { title: "Banana" },
@@ -32,12 +34,14 @@ export function List() {
       <p>리액트 연습 코드</p>
       <ul>
         {products.map((p) => (
-          <li>{p.title}</li>
+          <Title isActive={false} fontColor="blue">{p.title}</Title>
         ))}
       </ul>
       <Container>
-        <Title>{user.name}</Title>
-          <Imagestyle src={user.imageUrl}></Imagestyle>
+        <Title fontColor="green" isActive={false}>
+          {user.name}
+        </Title>
+        <Imagestyle src={user.imageUrl}></Imagestyle>
       </Container>
       {/* <Wrapper>
         <Title1>
