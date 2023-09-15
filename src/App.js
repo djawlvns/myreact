@@ -7,8 +7,13 @@
 // import { CounterState } from "./components/20230912/CounterState";
 // import { Menu } from "./components/20230913/Menu";
 import { createGlobalStyle } from "styled-components";
-import { Home } from "./components/20230913/Home";
+// import { Home } from "./components/20230913/Home";
 // import { Button1 } from "./components/20230913/Button";
+// import { Gallery } from "./components/20230914/Gallery";
+// import { OpenWeather } from "./components/20230914/OpenWeather";
+// import { MyRef } from "./components/20230915/MyRef";
+import { WebSite } from "./components/WEB/WebSite";
+// import { MyRouter } from "./components/20230915/MyRouter";
 
 const Globalstyle = createGlobalStyle`
 *{
@@ -22,7 +27,7 @@ const Globalstyle = createGlobalStyle`
 export function App() {
   return (
     <>
-    <Globalstyle />
+      <Globalstyle />
       {/* <Tab></Tab> */}
       {/* <Session></Session> */}
       {/* <List></List> */}
@@ -37,8 +42,13 @@ export function App() {
       ></PropsTest> */}
       {/* <CounterState></CounterState> */}
       {/* <Menu></Menu> */}
-      <Home></Home>
+      {/* <Home></Home> */}
       {/* <Button1 /> */}
+      {/* <Gallery /> */}
+      {/* <OpenWeather cityName=""></OpenWeather> */}
+      {/* <MyRef></MyRef> */}
+      <WebSite></WebSite>
+      {/* <MyRouter></MyRouter> */}
     </>
   );
 }
