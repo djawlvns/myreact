@@ -3,12 +3,13 @@ import video from "/Users/lllll/OneDrive/문서/Github/myreact/src/components/WE
 
 
 const Intro = styled.div`
+margin-top: 50px;
 `;
 export function Back() {
   return (
     <>
       <Intro>
-        <video muted autoPlay loop width="100%" height='850' >
+        <video muted autoPlay loop width="100%" height='800' >
           <source src={video} type={"video/mp4"} />
         </video>
       </Intro>

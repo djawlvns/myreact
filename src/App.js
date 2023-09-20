@@ -13,7 +13,10 @@ import { createGlobalStyle } from "styled-components";
 // import { OpenWeather } from "./components/20230914/OpenWeather";
 // import { MyRef } from "./components/20230915/MyRef";
 import { WebSite } from "./components/WEB/WebSite";
+// import { GameShop } from "./components/20230918/db/GameShop";
 // import { MyRouter } from "./components/20230915/MyRouter";
+// import { UseContext } from "./components/20230918/db/UseContext";
+
 
 const Globalstyle = createGlobalStyle`
 *{
@@ -49,6 +52,8 @@ export function App() {
       {/* <MyRef></MyRef> */}
       <WebSite></WebSite>
       {/* <MyRouter></MyRouter> */}
+      {/* <GameShop></GameShop> */}
+      {/* <UseContext></UseContext> */}
     </>
   );
 }
